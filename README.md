@@ -48,15 +48,23 @@ Example of a false positive: model predicts pneumonia with moderate confidence d
 
 The model is a sequential convolutional neural network (CNN) with four convolutional blocks followed by dense layers for binary classification:
 
-```python
-Conv2D(32, (3, 3), activation='relu')  
-→ MaxPooling2D  
-→ Conv2D(64, (3, 3), activation='relu')  
-→ MaxPooling2D  
-→ Conv2D(128, (3, 3), activation='relu')  
-→ MaxPooling2D  
-→ Conv2D(256, (3, 3), activation='relu')  
-→ MaxPooling2D  
-→ Flatten  
-→ Dense(256, activation='relu')  
-→ Dense(1, activation='sigmoid')
+- `Conv2D(32, (3, 3), activation='relu')`  
+- `MaxPooling2D`  
+- `Conv2D(64, (3, 3), activation='relu')`  
+- `MaxPooling2D` 
+- `Conv2D(128, (3, 3), activation='relu')`  
+- `MaxPooling2D`  
+- `Conv2D(256, (3, 3), activation='relu')`  
+- `MaxPooling2D`  
+- `Flatten`  
+- `Dense(256, activation='relu')`  
+- `Dense(1, activation='sigmoid')`
+
+## Summary 
+This model demonstrates the viability of deep learning for medical image classification, achieving strong sensitivity and an AUC of 0.93. Despite some false positives, its ability to flag potential pneumonia cases highlights potential utility in diagnostic workflows. Further tuning and external validation would be required for clinical use.
+
+## Next Steps
+- **Integrate** transfer learning (e.g., ResNet50, EfficientNet)
+- **Apply** image augmentation to reduce overfitting
+- **Add** Grad-CAM for model interpretability
+- **Tune** hyperparameters and experiment with larger batch sizes
