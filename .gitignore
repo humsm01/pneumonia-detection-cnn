@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Environment files
+.env
+*.env
+.env.*
+
+# Data & outputs
+*.h5
+*.ckpt
+*.csv
+*.pkl
+*.npz
+*.npy
+*.log
+*.db
+*.sqlite
+*.zip
+*.tar.gz
+
+# TensorBoard
+logs/
+events.out.tfevents.*
+
+# Images and plots (optional – if you want to generate locally instead of uploading)
+*.jpeg
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VSCode or PyCharm
+.vscode/
+.idea/
+
+# Conda or venv
+env/
+venv/

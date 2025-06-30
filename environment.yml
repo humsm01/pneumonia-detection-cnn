@@ -1,0 +1,14 @@
+name: pneumonia-cnn
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - tensorflow=2.12
+  - scikit-learn
+  - matplotlib
+  - numpy
+  - pillow
+  - pip
+  - pip:
+      - opencv-python
