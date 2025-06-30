@@ -24,13 +24,13 @@ A convolutional neural network (CNN) built to classify chest X-rays as either Pn
 - **Training Time:** ~24.3 seconds  
 - **Observations:** Strong recall on pneumonia cases, but some false positives on normal images. High sensitivity may be beneficial in clinical triage settings.
 
-See [`confusion_matrix.png`](./confusion_matrix.png) and [`roc_curve.png`](./roc_curve.png) for full evaluation.
+See [`confusion_matrix.png`](./assets/confusion_matrix.png) and [`roc_curve.png`](./assets/roc_curve.png) for full evaluation.
 
 ---
 
 ## Visual Data Comparison
 
-![Comparison](./comparison_1.png)  
+![Comparison](./assets/comparison_1.png)  
 Side-by-side visualization of a normal lung (left) and a pneumonia-affected lung (right). Pneumonia appears as cloudy or opaque regions due to fluid and inflammation.
 
 ---
@@ -39,7 +39,7 @@ Side-by-side visualization of a normal lung (left) and a pneumonia-affected lung
 
 | Predicted: Pneumonia (0.59) — Actual: Normal |  
 |---------------------------------------------|  
-| ![Sample Prediction](./comparison_2.png) |  
+| ![Sample Prediction](./assets/comparison_2.png) |  
 Example of a false positive: model predicts pneumonia with moderate confidence despite normal ground truth.
 
 ---
